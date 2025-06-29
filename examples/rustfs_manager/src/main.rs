@@ -32,16 +32,19 @@ enum Commands {
 
 #[tokio::main]
 pub async fn main() -> Result<()> {
+    let config = config::load_config()?;
+    let service_config = config.service.to_win_service_config();
+
     // Initialize tracing
-    let filter = EnvFilter::try_from_default_env().unwrap_or_else(|_| EnvFilter::new("info"));
+    let filter = EnvFilter::try_from_default_env()
+        .unwrap_or_else(|_| EnvFilter::new(config.manager.log_level));
     tracing_subscriber::registry()
         .with(tracing_subscriber::fmt::layer().json())
         .with(filter)
         .init();
 
     let cli = Cli::parse();
-    let config = config::load_config()?;
-    let service_config = config.service.to_win_service_config();
+
     let mut manager = ServiceManager::new(&config.service.name)?;
 
     match cli.command {

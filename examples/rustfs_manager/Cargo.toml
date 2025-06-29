@@ -11,4 +11,4 @@ config = "0.15"
 tracing = "0.1.41"
 tracing-subscriber = { version = "0.3.19", features = ["json", "env-filter"] }
 anyhow = "1.0"
-tokio = { version = "1.45", features = ["full"] }
+tokio = { version = "1.45", features = ["macros", "rt-multi-thread"] }
