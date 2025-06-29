@@ -4,7 +4,7 @@ version = "0.0.1"
 edition = "2024"
 description = "A Rust library for Windows service management using windows-rs"
 repository = "https://github.com/houseme/win-service-rs"
-license = "MIT"
+license = "MIT or Apache-2.0"
 keywords = ["windows", "service", "management", "windows-rs"]
 categories = ["os::windows-apis"]
 
