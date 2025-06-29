@@ -1,0 +1,9 @@
+[service]
+name = "RustFS"
+exe_path = "C:\\path\\to\\rustfs.exe"
+display_name = "RustFS Service"
+description = "RustFS File System Service"
+start_type = "demand"
+
+[manager]
+log_level = "info"

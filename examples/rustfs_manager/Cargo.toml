@@ -1,0 +1,14 @@
+[package]
+name = "rustfs_manager"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+win-service-rs = { path = "../../" }
+clap = { version = "4.5", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+config = "0.15"
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["json", "env-filter"] }
+anyhow = "1.0"
+tokio = { version = "1.45", features = ["full"] }
