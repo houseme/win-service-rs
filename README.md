@@ -1,5 +1,7 @@
 # RustFS Manager & win-service-rs
 
+English｜[中文](README_zh.md)
+
 ## Project Overview
 
 `rustfs-manager` is a Windows service management tool developed in Rust, built on top of the `win-service-rs` library,

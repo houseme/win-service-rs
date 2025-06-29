@@ -1,5 +1,7 @@
 # RustFS Manager & win-service-rs
 
+[英文](README.md)｜中文
+
 ## 项目概述
 
 `rustfs-manager` 是一个使用 Rust 语言开发的 Windows 服务管理工具，基于 `win-service-rs` 库，旨在提供类似 Linux `systemctl`
