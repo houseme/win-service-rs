@@ -9,6 +9,6 @@ clap = { version = "4.5", features = ["derive"] }
 serde = { version = "1.0", features = ["derive"] }
 config = "0.15"
 tracing = "0.1.41"
-tracing-subscriber = { version = "0.3.19", features = ["json", "env-filter"] }
+tracing-subscriber = { version = "0.3.20", features = ["json", "env-filter"] }
 anyhow = "1.0"
 tokio = { version = "1.45", features = ["macros", "rt-multi-thread"] }
